@@ -1,0 +1,159 @@
+.container {
+    width: 100%;
+    min-height: 700px;
+    padding: 30px;
+}
+
+// -------------------------------
+// HEADER
+
+header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+        letter-spacing: .8rem;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+    }
+
+    #theme-mode {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+// -------------------------------
+// INPUT
+
+.input-container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 4px;
+    background-color: $desaturated-blue;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+}
+
+.circle-input {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $dark-grayish-blue;
+}
+
+.circle-input:hover {
+    border-color: $hover-light-grayish-blue;
+}
+
+input {
+    width: 100%;
+    padding: 20px 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: $desaturated-blue;    
+    color: #FFF;
+    flex: 1;
+}
+
+// -------------------------------
+// FILTER CONTAINER
+
+footer.todo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $desaturated-blue;
+    padding: 15px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 15px 10px 5px rgba(0, 0, 0, .3);
+    
+    #number-items {
+        color: $dark-grayish-blue;
+    }
+}
+
+#number-items {
+    font-size: 1rem;
+}
+
+.filter-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-filter {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+    color: $dark-grayish-blue;
+    font-family: 'Josefin sans', sans-serif;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    color: $hover-light-grayish-blue;
+}
+
+.btn-actived {
+    color: $bright-blue;
+}
+
+// -------------------------------
+// FOOTER PAGE
+
+footer.page {
+    margin-top: 30px;
+    width: 100%;
+    color: $dark-grayish-blue;
+    text-align: center;
+    font-size: .9rem;
+}
+
+// LIGHT
+
+.light {
+    background-color: $light-grayish-blue;
+
+    #input-container {
+        transition: background 1s;
+        background-color: $light-grayish-blue;
+
+        input {
+            transition: background 1s;
+            background-color: $light-grayish-blue;
+            color: $desaturated-blue;
+        }
+    }
+
+    .circle-input:hover, .circle:hover {
+        transition: background 1s;
+        border-color: $desaturated-blue;
+    }
+
+    .user-list {
+        background-color: $light-grayish-blue;
+        color: $desaturated-blue;
+    }
+
+    footer.todo {
+        transition: background 1s;
+        background-color: $light-grayish-blue;
+    }
+
+    .btn-filter:hover {
+        color: $light-theme-very-dark-grayish-blue;
+    }
+}

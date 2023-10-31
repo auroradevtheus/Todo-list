@@ -1,0 +1,102 @@
+.circle, .paragraph-name, .icon-delete {
+    cursor: pointer;
+}
+
+// -------------------------------------------------------
+// LIST CONTAINER
+.user-list {
+    max-height: 450px;
+    overflow-y: auto;
+    margin-top: 20px;
+    border-radius: 4px 4px 0 0;
+    background-color: $desaturated-blue;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, .3);
+}
+
+.user-list:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.user-list::-webkit-scrollbar {
+    background-color: $desaturated-blue;
+    width: 7px;
+    transition: trasform .5s;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+    background-color: $dark-grayish-blue;
+    border-radius: 60px;
+}
+
+// -------------------------------------------------------
+// ITEM CONTAINER
+
+.item {
+    width: 100%;
+    display: flex;
+    padding: 0px 15px;
+    gap: 22px;
+    align-items: center;
+    transition: all .5s;
+    border-bottom: 1px solid $light-grayish-blue;
+    overflow: hidden;
+
+    p {
+        max-width: 80%;
+        padding: 20px 0;
+        flex: 1;
+        font-size: .9rem;
+        letter-spacing: .1rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+}
+
+// -------------------------------------------------------
+// CIRCLE CHECK
+
+.circle {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid $dark-grayish-blue;
+
+    i {
+        font-size: .8rem;
+    }
+}
+
+.circle:hover {
+    border-color: $hover-light-grayish-blue;
+}
+
+// -------------------------------------------------------
+// COMPLETED
+
+
+.name-completed {
+    text-decoration: line-through;
+    color: $dark-grayish-blue;
+}
+
+.checked {
+    background: linear-gradient(120deg, #57ddff, #c058f3);
+    border: none;
+}
+
+// DELETE BUTTON
+.icon-delete {
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.item:hover .icon-delete {
+    opacity: 1;
+}

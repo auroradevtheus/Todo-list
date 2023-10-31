@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import './assets/partials/colors';
+@import './assets/partials/img-bg';
+@import './assets/partials/todo-style';
+@import './assets/partials/item-style';
+@import './assets/partials/medias';
+
+html {
+    padding-top: 30px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: hsl(235, 21%, 11%);
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 1s;
+}
+
+input {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+footer.page {
+    padding-bottom: 50px;
+}
+

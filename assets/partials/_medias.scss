@@ -1,0 +1,44 @@
+@media screen and (min-width: 628px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        max-width: 650px;
+    }
+
+}
+
+@media screen and (max-width: 628px) {
+    html {
+        font-size: 14px;
+    }
+
+    .icon-delete {
+        opacity: 1;
+    }
+
+    
+}
+
+@media screen and (max-width: 375px) {
+    .img-bg {
+        width: 100vw;
+    }
+    
+    .filter-container {
+        width: 100%;
+        margin-top: 15px;
+        padding: 15px 0;
+        justify-content: center;
+        gap: 25px;
+        border-radius: 4px;
+        background-color: $desaturated-blue;
+        box-shadow: 0 5px 10px 10px rgba(0, 0, 0, .3);
+    }
+
+    .user-list::-webkit-scrollbar {
+        width: 2px;
+    }
+}
+

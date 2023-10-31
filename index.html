@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <!-- LINK FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/3695f45321.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body>
+
+  <div class="img-bg"></div>
+
+  <div class="container">
+    <header>
+      <h1>Todo</h1>
+      <div id="theme-mode" class="dark" onclick="themeMode()">
+        <img id="img-theme" src="./assets/images/icon-sun.svg" alt="icon sun" />
+      </div>
+    </header>
+  
+    <main id="main">
+      <div id="input-container" class="input-container">
+        <div class="circle-input"></div>
+        <input id="userInput" type="text" placeholder="Create a new todo..." />
+      </div>
+  
+      <div class="user-list">
+      </div>
+  
+      <footer class="todo">
+        <div id="number-items">
+          <span id="list-lenght">0</span> items left 
+        </div>
+    
+        <div class="filter-container">
+          <button class="btn-filter" onclick="filterAll( )">All</button>
+          <button class="btn-filter" onclick="filterActivate()">Active</button>
+          <button class="btn-filter" onclick="filterCompleted()">Completed</button>
+        </div>
+    
+        <button id="clear-completed" class="btn-filter" onclick="deleteItemsComplete()">Clear Completed</button>
+      </footer>
+      
+  
+    </main>
+  
+    <footer class="page">
+      Drag and drop to reorder list 
+    </footer>
+  </div>
+  
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aurora Dev</a>.
+  </div> -->
+
+  <script src="./script.js"></script>
+</body>
+</html>
